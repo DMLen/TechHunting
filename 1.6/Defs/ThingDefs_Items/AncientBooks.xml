@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AncientBookBase">
+    <defName>AncientBookPoor</defName>
+    <label>ancient research notes</label>
+    <description>Little more than tattered old loose documents with barely-legible writing and faded diagrams. A small amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>313</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>250</researchProgress>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientBookBase">
+    <defName>AncientBookNormal</defName>
+    <label>ancient research book</label>
+    <description>A written manual that explains and illustrates various engineering concepts. A moderate amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>625</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>500</researchProgress>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientBookBase">
+    <defName>AncientBookGood</defName>
+    <label>ancient research drive</label>
+    <description>A well-preserved data storage device that contains schematics, experiment logs, and other valuable research data. A good amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>937.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>750</researchProgress>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientBookBase">
+    <defName>AncientBookExcellent</defName>
+    <label>ancient research knowledge core</label>
+    <description>A valuable artifact that contains an enthralled AI subpersona, which is highly knowledgeable in various technologies. A large amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>1000</researchProgress>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  </Defs>

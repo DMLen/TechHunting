@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- odyssey shits-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingSetMakerDef[defName="MapGen_ScarlandsHermeticCrate"]/root/options</xpath>
+                    <value>
+                        <li>
+                            <weight>0.8</weight>
+                            <thingSetMaker Class="ThingSetMaker_RandomOption">
+                                <options>
+                                    <li>
+                                        <weight>50</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookPoor</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
+                                        <weight>30</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookNormal</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
+                                        <weight>15</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookGood</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
+                                        <weight>5</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookExcellent</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                </options>
+                            </thingSetMaker>
+                        </li>
+                    </value>
+                </li>
+
+                <!-- high value crate, better odds for better books-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingSetMakerDef[defName="MapGen_HighValueCrate"]/root/options</xpath>
+                    <value>
+                        <li>
+                            <weight>0.8</weight>
+                            <thingSetMaker Class="ThingSetMaker_RandomOption">
+                                <options>
+                                    <li>
+                                        <weight>25</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookNormal</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
+                                        <weight>50</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookGood</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
+                                        <weight>25</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookExcellent</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                </options>
+                            </thingSetMaker>
+                        </li>
+                    </value>
+                </li>
+
+                <!-- of excellent books only for safe!!-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingSetMakerDef[defName="Reward_AncientSafe"]/root/options</xpath>
+                    <value>
+                        <li>
+                            <weight>0.5</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <countRange>1</countRange>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookExcellent</li>
+                                        </thingDefs>
+                                    </filter>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

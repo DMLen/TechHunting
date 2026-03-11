@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- all books -->
+  <ThingCategoryDef>
+    <defName>TechHunting_AncientBooks</defName>
+    <label>ancient books</label>
+    <parent>ItemsMisc</parent>
+  </ThingCategoryDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- parent class for ancient books -->
+  <ThingDef Abstract="true" Name="AncientBookBase" ParentName="ResourceBase">
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>1</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+      <li>TechHunting_AncientBooks</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>  
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Read {0_label}</useLabel>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <!-- example use effect: will progress the current tech project by 500 points of progress upon item use.
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>500</researchProgress>
+      </li>-->
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options</xpath>
+        <value>
+            <li>
+                <!-- 0.5 chance for book spawn -->
+                <chance>0.5</chance>
+                <thingSetMaker Class="ThingSetMaker_RandomOption">
+                    <options>
+                        <li>
+                            <!-- we use a complex nested structure: when it rolls 0.5 to spawn a book, 50% of the time it will then be ancientbookpoor-->
+                            <!-- pain in the fuckign ass to readb ut it works-->
+                            <weight>50</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookPoor</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>30</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookNormal</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>15</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookGood</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>5</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookExcellent</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                    </options>
+                </thingSetMaker>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientComplexRoomLoot_Default"]/root/options</xpath>
+        <value>
+            <li>
+                <weight>0.6</weight>
+                <thingSetMaker Class="ThingSetMaker_RandomOption">
+                    <options>
+                        <li>
+                            <weight>50</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookPoor</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>30</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookNormal</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>15</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookGood</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>5</weight>
+                            <thingSetMaker Class="ThingSetMaker_Count">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>AncientBookExcellent</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <countRange>1</countRange>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                    </options>
+                </thingSetMaker>
+            </li>
+        </value>
+    </Operation>
+</Patch>

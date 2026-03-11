@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+<packageId>lambda.TechHunting</packageId>
+<name>Tech Hunting</name>
+<author>Lambda</author>
+<description>Tired of waiting at 4x speed for a research bar to fill? Pack your gear and go hunt for the knowledge of the ancients instead!</description>
+
+<supportedVersions>
+  <li>1.6</li>
+</supportedVersions>
+
+<modVersion IgnoreIfNoMatchingField="True">0.1</modVersion>
+<!-- <modDependencies>
+  <li>
+    <packageId>brrainz.harmony</packageId>
+    <displayName>Harmony</displayName>
+    <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+  </li>
+</modDependencies> -->
+
+<loadAfter>
+  <!-- <li>brrainz.harmony</li> -->
+</loadAfter>
+
+</ModMetaData>
