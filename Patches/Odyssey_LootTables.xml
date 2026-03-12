@@ -81,6 +81,19 @@
                             <thingSetMaker Class="ThingSetMaker_RandomOption">
                                 <options>
                                     <li>
+                                        <weight>25</weight>
+                                        <thingSetMaker Class="ThingSetMaker_Count">
+                                            <fixedParams>
+                                                <filter>
+                                                    <thingDefs>
+                                                        <li>AncientBookNormal</li>
+                                                    </thingDefs>
+                                                </filter>
+                                                <countRange>1</countRange>
+                                            </fixedParams>
+                                        </thingSetMaker>
+                                    </li>
+                                    <li>
                                         <weight>50</weight>
                                         <thingSetMaker Class="ThingSetMaker_Count">
                                             <fixedParams>
@@ -94,7 +107,7 @@
                                         </thingSetMaker>
                                     </li>
                                     <li>
-                                        <weight>50</weight>
+                                        <weight>25</weight>
                                         <thingSetMaker Class="ThingSetMaker_Count">
                                             <fixedParams>
                                                 <filter>
@@ -129,25 +142,6 @@
                                 </fixedParams>
                             </thingSetMaker>
                         </li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingSetMakerDef[defName="MapGen_AbandonedColonyStockpile"]/root/options</xpath>
-                    <value>
-                    <li>
-                        <weight>1</weight>
-                        <thingSetMaker Class="ThingSetMaker_MarketValue">
-                        <fixedParams>
-                            <maxThingMarketValue>1000</maxThingMarketValue>
-                            <filter>
-                            <categories>
-                                <li>TechHunting_AncientBooks</li>
-                            </categories>
-                            </filter>
-                        </fixedParams>
-                        </thingSetMaker>
-                    </li>
                     </value>
                 </li>
             </operations>
