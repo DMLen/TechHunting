@@ -67,7 +67,7 @@
   <ThingDef ParentName="AncientBookBase">
     <defName>AncientBookExcellent</defName>
     <label>ancient research knowledge core</label>
-    <description>A valuable artifact that contains an enthralled AI subpersona, which is highly knowledgeable in various technologies. A large amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <description>A valuable artifact that contains a thralled AI subpersona, which is highly knowledgeable in various technologies. A large amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
       <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
       <graphicClass>Graphic_Single</graphicClass>
