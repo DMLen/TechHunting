@@ -17,9 +17,6 @@
         <researchProgress>250</researchProgress>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardHighFreq</li>
-    </thingSetMakerTags>
   </ThingDef>
 
   <ThingDef ParentName="AncientBookBase">
@@ -38,9 +35,6 @@
         <researchProgress>500</researchProgress>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
   </ThingDef>
 
   <ThingDef ParentName="AncientBookBase">
@@ -59,9 +53,6 @@
         <researchProgress>750</researchProgress>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
   </ThingDef>
 
   <ThingDef ParentName="AncientBookBase">
@@ -80,9 +71,6 @@
         <researchProgress>1000</researchProgress>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
   </ThingDef>
 
   </Defs>

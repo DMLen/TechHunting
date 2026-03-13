@@ -34,6 +34,10 @@
       </li>-->
       <li Class="CompProperties_UseEffectDestroySelf" />
     </comps>
+    <!-- same freq as ultratech weapons like monoswords -->
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
   </ThingDef>
 
 </Defs>
