@@ -6,29 +6,11 @@
     <label>ancient research notes</label>
     <description>Little more than tattered old loose documents with barely-legible writing and faded diagrams. A small amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
-      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <texPath>TechHunting/Items/AncientDocuments</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>313</MarketValue>
-    </statBases>
-    <comps>
-      <li Class="TechHunting.CompProperties_ProgressTechProject">
-        <researchProgress>250</researchProgress>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef ParentName="AncientBookBase">
-    <defName>AncientBookNormal</defName>
-    <label>ancient research book</label>
-    <description>A written manual that explains and illustrates various engineering concepts. A moderate amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
-    <graphicData>
-      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>625</MarketValue>
+      <MarketValue>330</MarketValue>
     </statBases>
     <comps>
       <li Class="TechHunting.CompProperties_ProgressTechProject">
@@ -38,15 +20,15 @@
   </ThingDef>
 
   <ThingDef ParentName="AncientBookBase">
-    <defName>AncientBookGood</defName>
-    <label>ancient research drive</label>
-    <description>A well-preserved data storage device that contains schematics, experiment logs, and other valuable research data. A good amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <defName>AncientBookNormal</defName>
+    <label>ancient research book</label>
+    <description>A written manual that explains and illustrates various engineering concepts. A moderate amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
-      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <texPath>TechHunting/Items/AncientBook</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>937.5</MarketValue>
+      <MarketValue>495</MarketValue>
     </statBases>
     <comps>
       <li Class="TechHunting.CompProperties_ProgressTechProject">
@@ -56,19 +38,41 @@
   </ThingDef>
 
   <ThingDef ParentName="AncientBookBase">
-    <defName>AncientBookExcellent</defName>
-    <label>ancient research knowledge core</label>
-    <description>A valuable artifact that contains a thralled AI subpersona, which is highly knowledgeable in various technologies. A large amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <defName>AncientBookGood</defName>
+    <label>ancient research drive</label>
+    <description>A well-preserved data storage device that contains schematics, experiment logs, and other valuable research data. A good amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
-      <texPath>Things/Item/Special/SubpersonaCoreTechprof</texPath>
+      <texPath>TechHunting/Items/KnowledgeDrive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>1250</MarketValue>
+      <MarketValue>660</MarketValue>
     </statBases>
     <comps>
       <li Class="TechHunting.CompProperties_ProgressTechProject">
         <researchProgress>1000</researchProgress>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientBookBase">
+    <defName>AncientBookExcellent</defName>
+    <label>ancient research knowledge core</label>
+    <description>A valuable artifact that contains a thralled AI subpersona, which is highly knowledgeable in various technologies. A large amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <graphicData>
+      <texPath>TechHunting/Items/KnowledgeCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>990</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="TechHunting.CompProperties_ProgressTechProject">
+        <researchProgress>1500</researchProgress>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(221,139,30,0)</glowColor>
       </li>
     </comps>
   </ThingDef>
