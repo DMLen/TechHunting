@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- make research books a gauranteed item sold by imperial caravans and orbital traders -->
+                <!-- already sold by imperial settlements due to "exoticMisc" tradetag on book base item-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName="Empire_Caravan_TraderGeneral"]/stockGenerators</xpath>
+                    <value>
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookPoor</thingDef>
+                                        <countRange>1~3</countRange> </li>
+
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookNormal</thingDef>
+                                        <countRange>0~2</countRange>
+                                    </li>
+
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookGood</thingDef>
+                                        <countRange>0~1</countRange> 
+                                    </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName="Orbital_Empire"]/stockGenerators</xpath>
+                    <value>
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookPoor</thingDef>
+                                        <countRange>2~4</countRange> </li>
+
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookNormal</thingDef>
+                                        <countRange>0~2</countRange>
+                                    </li>
+
+                                    <li Class="StockGenerator_SingleDef">
+                                        <thingDef>AncientBookGood</thingDef>
+                                        <countRange>0~1</countRange> 
+                                    </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
