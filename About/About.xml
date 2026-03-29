@@ -2,15 +2,15 @@
 <ModMetaData>
 
 <packageId>lambda.TechHunting</packageId>
-<name>Tech Hunting</name>
+<name>Tech Hunter's Delight</name>
 <author>Lambda</author>
-<description>Tired of waiting at 4x speed for a research bar to fill? Pack your gear and go hunt for the knowledge of the ancients instead!</description>
+<description>Tired of waiting at 4x speed for a research bar to slowly fill? Are your colonists incapable of critical thinking? Do you think it's a bit silly that staring at a bench for long enough will grant your tribals knowledge of the Johnson-Tanaka drive? Pack your gear and go hunt for the knowledge of the ancients instead!</description>
 
 <supportedVersions>
   <li>1.6</li>
 </supportedVersions>
 
-<modVersion IgnoreIfNoMatchingField="True">0.1</modVersion>
+<modVersion IgnoreIfNoMatchingField="True">1.0</modVersion>
 <!-- <modDependencies>
   <li>
     <packageId>brrainz.harmony</packageId>
