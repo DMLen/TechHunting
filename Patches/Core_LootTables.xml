@@ -19,7 +19,7 @@
                                             <li>AncientBookPoor</li>
                                         </thingDefs>
                                     </filter>
-                                    <countRange>1</countRange>
+                                    <countRange>1~2</countRange>
                                 </fixedParams>
                             </thingSetMaker>
                         </li>
@@ -32,7 +32,7 @@
                                             <li>AncientBookNormal</li>
                                         </thingDefs>
                                     </filter>
-                                    <countRange>1</countRange>
+                                    <countRange>1~2</countRange>
                                 </fixedParams>
                             </thingSetMaker>
                         </li>
@@ -84,7 +84,7 @@
                                             <li>AncientBookPoor</li>
                                         </thingDefs>
                                     </filter>
-                                    <countRange>1</countRange>
+                                    <countRange>1~2</countRange>
                                 </fixedParams>
                             </thingSetMaker>
                         </li>
@@ -97,7 +97,7 @@
                                             <li>AncientBookNormal</li>
                                         </thingDefs>
                                     </filter>
-                                    <countRange>1</countRange>
+                                    <countRange>1~2</countRange>
                                 </fixedParams>
                             </thingSetMaker>
                         </li>
