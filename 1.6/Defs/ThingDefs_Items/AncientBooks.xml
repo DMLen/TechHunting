@@ -4,7 +4,7 @@
   <ThingDef ParentName="AncientBookBase">
     <defName>AncientBookPoor</defName>
     <label>ancient research notes</label>
-    <description>Little more than tattered old loose documents with barely-legible writing and faded diagrams. A small amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <description>Little more than tattered, old loose documents with illegible writing and faded diagrams. A small amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
       <texPath>TechHunting/Items/AncientDocuments</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -40,7 +40,7 @@
   <ThingDef ParentName="AncientBookBase">
     <defName>AncientBookGood</defName>
     <label>ancient research drive</label>
-    <description>A well-preserved data storage device that contains schematics, experiment logs, and other valuable research data. A good amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
+    <description>A well-preserved data storage device that contains schematics, experiment logs, and other useful research data. A good amount of progress for the current research project can be instantly gained from reading this. It can only be used once.</description>
     <graphicData>
       <texPath>TechHunting/Items/KnowledgeDrive</texPath>
       <graphicClass>Graphic_Single</graphicClass>

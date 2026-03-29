@@ -29,13 +29,9 @@
         <useLabel>Read {0_label}</useLabel>
         <showUseGizmo>true</showUseGizmo>
       </li>
-      <!-- example use effect: will progress the current tech project by 500 points of progress upon item use.
-      <li Class="TechHunting.CompProperties_ProgressTechProject">
-        <researchProgress>500</researchProgress>
-      </li>-->
       <li Class="CompProperties_UseEffectDestroySelf" />
+      <!--see the derived defs in AncientBooks.xml for how to configure research value with new comp TechHunting.CompProperties_ProgressTechProject-->
     </comps>
-    <!-- same freq as ultratech weapons like monoswords -->
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
