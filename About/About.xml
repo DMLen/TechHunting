@@ -21,6 +21,7 @@
 
 <loadAfter>
   <!-- <li>brrainz.harmony</li> -->
+  <li>frozensnowfox.betterexplorationloot</li>
 </loadAfter>
 
 </ModMetaData>
